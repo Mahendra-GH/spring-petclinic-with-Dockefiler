@@ -1,9 +1,9 @@
-FROM maven:3.9-eclipse-temurin-17 as build
-COPY ./spc /spc
+FROM maven:3.9-eclipse-temurin-17 As build
+COPY ./src /spc
 WORKDIR spc
 RUN mvn package
 
-FROM eclipse-temurin:17 as Final
+FROM eclipse-temurin:17
 LABEL project="learning" 
 LABEL author="mahe"
 ARG USERNAME=spc
