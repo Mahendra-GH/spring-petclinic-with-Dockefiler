@@ -2,6 +2,7 @@
 target/
 .devcontainer/
 k8s/
+image/
 
 # Ignore local Maven repository
 .m2/
